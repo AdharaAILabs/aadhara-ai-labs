@@ -36,7 +36,7 @@ export default function HeroSection() {
     },
   };
 
-  const item = {
+  const itemAnimation = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
@@ -86,20 +86,20 @@ export default function HeroSection() {
           initial="hidden"
           animate="show"
         >
-          <motion.div variants={item} className="inline-flex items-center mb-6 bg-muted px-4 py-1.5 rounded-full text-sm font-medium text-muted-foreground">
+          <motion.div variants={itemAnimation} className="inline-flex items-center mb-6 bg-muted px-4 py-1.5 rounded-full text-sm font-medium text-muted-foreground">
             <span className="flex h-2 w-2 rounded-full bg-green-500 mr-2"></span>
             Pioneering the Future of AI
           </motion.div>
           
-          <motion.h1 variants={item} className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
+          <motion.h1 variants={itemAnimation} className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
             Ādhāra AI Labs
           </motion.h1>
           
-          <motion.p variants={item} className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <motion.p variants={itemAnimation} className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Advancing artificial intelligence through innovative research and cutting-edge solutions.
           </motion.p>
           
-          <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          <motion.div variants={itemAnimation} className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button asChild size="lg" className="rounded-full">
               <Link href="/services">
                 Explore Our Services <ArrowRight className="ml-2 h-4 w-4" />
@@ -120,16 +120,16 @@ export default function HeroSection() {
               { icon: <Code className="h-6 w-6" />, title: "AI Code Optimization"},
               { icon: <Network className="h-6 w-6" />, title: "Neural Network Research" },
               { icon: <Zap className="h-6 w-6" />, title: "Model Compression" },
-            ].map((item, index) => (
+            ].map((featureItem, index) => (
               <motion.div
-              key={index}
-              variants={item}
-              className="bg-card hover:bg-card/80 border border-border rounded-xl p-4 text-center transition-all hover:shadow-md"
+                key={index}
+                variants={itemAnimation}
+                className="bg-card hover:bg-card/80 border border-border rounded-xl p-4 text-center transition-all hover:shadow-md"
               >
-              <div className="bg-primary/10 rounded-full p-3 inline-flex mb-3">
-                {item.icon}
-              </div>
-              <h3 className="font-medium">{item.title}</h3>
+                <div className="bg-primary/10 rounded-full p-3 inline-flex mb-3">
+                  {featureItem.icon}
+                </div>
+                <h3 className="font-medium">{featureItem.title}</h3>
               </motion.div>
             ))}
           </motion.div>
