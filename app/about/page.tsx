@@ -63,7 +63,7 @@ export default function AboutPage() {
                 </p>
                 
                 <p className="text-muted-foreground">
-                Today, Ādhāra AI Labs is recognized for its work in Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Machine Learning, AI-driven Code Optimization, Neural Network Research, and Model Compression techniques.
+                Today, Ādhāra AI Labs works in the domains of Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Machine Learning, AI-driven Code Optimization, Neural Network Research, and Model Compression techniques.
                 </p>
             </motion.div>
 
