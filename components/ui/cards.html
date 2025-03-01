@@ -1,0 +1,323 @@
+<!-- Expertise Card -->
+<div class="expertise-card">
+    <div class="expertise-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 16v-4"></path>
+            <path d="M12 8h.01"></path>
+        </svg>
+    </div>
+    <h3 class="expertise-card-title">Card Title</h3>
+    <p class="expertise-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet ultricies lacinia.</p>
+    <a href="#" class="expertise-card-link">Learn More</a>
+</div>
+
+<!-- Project Card -->
+<div class="project-card">
+    <div class="project-card-image">
+        <img src="assets/images/project.jpg" alt="Project Title">
+    </div>
+    <div class="project-card-content">
+        <h3 class="project-card-title">Project Title</h3>
+        <p class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet ultricies lacinia.</p>
+        <div class="project-card-tags">
+            <span class="project-card-tag">Tag 1</span>
+            <span class="project-card-tag">Tag 2</span>
+            <span class="project-card-tag">Tag 3</span>
+        </div>
+        <a href="#" class="project-card-link">View Project</a>
+    </div>
+</div>
+
+<!-- Blog Card -->
+<div class="blog-card">
+    <img src="assets/images/blog.jpg" alt="Blog Title" class="blog-card-image">
+    <div class="blog-card-content">
+        <div class="blog-card-meta">
+            <span>October 15, 2023</span>
+            <span>8 min read</span>
+        </div>
+        <h3 class="blog-card-title">Blog Title</h3>
+        <p class="blog-card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet ultricies lacinia.</p>
+        <a href="#" class="btn btn-secondary">Read More</a>
+    </div>
+</div>
+
+<!-- Testimonial Card -->
+<div class="testimonial-card">
+    <div class="testimonial-card-content">
+        <p class="testimonial-card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet ultricies lacinia."</p>
+    </div>
+    <div class="testimonial-card-author">
+        <img src="assets/images/avatar.jpg" alt="Author Name" class="testimonial-card-avatar">
+        <div class="testimonial-card-info">
+            <h4 class="testimonial-card-name">Author Name</h4>
+            <p class="testimonial-card-position">Position, Company</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Expertise Card */
+    .expertise-card {
+        background-color: var(--dark);
+        border-radius: var(--radius-lg);
+        padding: var(--space-xl);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .expertise-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(110, 86, 207, 0.3);
+    }
+    
+    .expertise-card-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: var(--space-lg);
+    }
+    
+    .expertise-card-icon .icon {
+        color: white;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .expertise-card-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-md);
+        color: var(--light);
+    }
+    
+    .expertise-card-description {
+        color: var(--gray-400);
+        margin-bottom: var(--space-lg);
+        flex-grow: 1;
+    }
+    
+    .expertise-card-link {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        transition: color 0.3s ease;
+    }
+    
+    .expertise-card-link:hover {
+        color: var(--primary-light);
+    }
+    
+    .expertise-card-link::after {
+        content: '→';
+        margin-left: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+    
+    .expertise-card-link:hover::after {
+        transform: translateX(5px);
+    }
+    
+    /* Project Card */
+    .project-card {
+        background-color: var(--dark);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(110, 86, 207, 0.3);
+    }
+    
+    .project-card-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .project-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    
+    .project-card:hover .project-card-image img {
+        transform: scale(1.05);
+    }
+    
+    .project-card-content {
+        padding: var(--space-lg);
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    
+    .project-card-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-md);
+        color: var(--light);
+    }
+    
+    .project-card-description {
+        color: var(--gray-400);
+        margin-bottom: var(--space-lg);
+        flex-grow: 1;
+    }
+    
+    .project-card-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-sm);
+        margin-bottom: var(--space-lg);
+    }
+    
+    .project-card-tag {
+        background-color: rgba(110, 86, 207, 0.1);
+        color: var(--primary);
+        padding: 0.25rem 0.75rem;
+        border-radius: var(--radius-full);
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    
+    .project-card-link {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        transition: color 0.3s ease;
+        align-self: flex-start;
+    }
+    
+    .project-card-link:hover {
+        color: var(--primary-light);
+    }
+    
+    .project-card-link::after {
+        content: '→';
+        margin-left: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+    
+    .project-card-link:hover::after {
+        transform: translateX(5px);
+    }
+    
+    /* Blog Card */
+    .blog-card {
+        background-color: var(--dark);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blog-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(110, 86, 207, 0.3);
+    }
+    
+    .blog-card-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .blog-card-content {
+        padding: var(--space-lg);
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    
+    .blog-card-meta {
+        display: flex;
+        align-items: center;
+        margin-bottom: var(--space-md);
+        color: var(--gray-400);
+        font-size: 0.875rem;
+    }
+    
+    .blog-card-meta span {
+        margin-right: var(--space-md);
+    }
+    
+    .blog-card-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-sm);
+        color: var(--light);
+    }
+    
+    .blog-card-excerpt {
+        color: var(--gray-400);
+        margin-bottom: var(--space-md);
+        flex-grow: 1;
+    }
+    
+    /* Testimonial Card */
+    .testimonial-card {
+        background-color: var(--dark);
+        border-radius: var(--radius-lg);
+        padding: var(--space-xl);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(110, 86, 207, 0.3);
+    }
+    
+    .testimonial-card-content {
+        margin-bottom: var(--space-lg);
+    }
+    
+    .testimonial-card-text {
+        color: var(--gray-300);
+        font-size: 1.1rem;
+        line-height: 1.6;
+        font-style: italic;
+    }
+    
+    .testimonial-card-author {
+        display: flex;
+        align-items: center;
+    }
+    
+    .testimonial-card-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: var(--space-md);
+    }
+    
+    .testimonial-card-name {
+        color: var(--light);
+        margin-bottom: 0.25rem;
+        font-size: 1rem;
+    }
+    
+    .testimonial-card-position {
+        color: var(--gray-400);
+        font-size: 0.875rem;
+        margin: 0;
+    }
+</style>
+
