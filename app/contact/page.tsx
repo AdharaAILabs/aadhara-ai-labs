@@ -59,7 +59,7 @@ export default function ContactPage() {
       icon: <MapPin className="h-5 w-5" />,
       title: "Location",
       details: "Bangalore, India",
-      link: "#",
+      link: "https://www.google.com/maps/place/Bangalore,+Karnataka,+India",
     },
   ];
 
@@ -217,7 +217,7 @@ export default function ContactPage() {
             className="rounded-xl overflow-hidden h-[400px] shadow-md"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.50764017948322!3d37.75781499657613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15500.863768161267!2d77.55695868718833!3d12.971598690242457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1674ef3d3a83%3A0x24231a37eb3a9d6f!2sBangalore%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1697042451895!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}
