@@ -15,11 +15,11 @@ export default function Footer() {
               Pioneering the future of artificial intelligence through innovative research and solutions.
             </p>
             <div className="flex space-x-4">
-              <Link href="https://twitter.com" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="https://x.com/aadhara_ailabs" className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="https://linkedin.com" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="https://in.linkedin.com/company/%C4%81dh%C4%81ra-ai-labs" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
