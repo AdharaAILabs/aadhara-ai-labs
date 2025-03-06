@@ -86,7 +86,7 @@ export default function Footer() {
             <h3 className="font-medium text-lg mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-muted-foreground">
-                Email: <a href="mailto:info@adharaai.com" className="hover:text-primary transition-colors">info@adharaai.com</a>
+                Email: <a href="mailto:aadhara@zohomail.in" className="hover:text-primary transition-colors">aadhara@zohomail.in</a>
               </li>
               <li className="text-muted-foreground">
                 Location: Bangalore, India

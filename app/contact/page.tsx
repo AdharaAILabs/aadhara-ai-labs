@@ -46,8 +46,8 @@ export default function ContactPage() {
     {
       icon: <Mail className="h-5 w-5" />,
       title: "Email",
-      details: "info@adharaai.com",
-      link: "mailto:info@adharaai.com",
+      details: "aadhara@zohomail.in",
+      link: "mailto:aadhara@zohomail.in",
     },
     {
       icon: <Phone className="h-5 w-5" />,
